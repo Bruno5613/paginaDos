@@ -1,0 +1,7 @@
+<mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let comida of comidas">
+        <p>{{ comida.id }}</p>
+        <h2>{{ comida.nombre }}</h2>
+        <button mat-flat-button (click)="verDetalles(comida.id)">Ver detalles</button>
+    </mat-grid-tile>
+</mat-grid-list>
